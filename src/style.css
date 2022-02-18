@@ -1,0 +1,435 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@400;700&display=swap');
+
+:root{
+    --font1: 'Roboto', sans-serif;
+    --font2: 'Open Sans', sans-serif;
+    --font3: 'Teko', sans-serif;
+    --colormain: #7a0e2e;
+    --colorlightred: #ff0038;
+    --colorDark: #2F333C;
+    --colorDark2: #363B46;
+}
+body{
+    /* width: 375px; */
+}
+.bgcolorred{
+    background-color: var(--colormain);
+}
+.colorred{
+    color: var(--colormain);
+}
+.bgcolorlightred{
+    background-color: var(--colorlightred);
+}
+.colorlightred{
+    color: var(--colorlightred);
+}
+.bgcolordark2{
+    background-color: var(--colorDark2);
+}
+.font1{
+    font-family: var(--font1);
+}
+.font2{
+    font-family: var(--font2);
+}
+.font3{
+    font-family: var(--font3);
+}
+
+/* QUMBARA */
+.timecontainer{
+    font-size: 20px;
+    color: var(--colorlightred);
+    font-family: var(--font3);
+}
+#saatsaniyedeqiqe{
+    margin-left: 2px;
+    margin-right: 10px;
+    font-size: 13px;
+    color: #2F333C;
+    font-family: var(--font1);
+}
+
+/* Blur */
+
+.blurmoney,
+.blurmoney2{
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
+}
+.expenses{
+    font-family: var(--font1);
+    font-weight: 400;
+    font-size: 13px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: var(--colorDark);
+    margin-bottom: 5px;
+}
+.allmoney{
+    font-family: var(--font1);
+    font-weight: 400;
+    font-size: 37px;
+    text-transform: uppercase;
+    color: #2F333C;
+    margin-bottom: 30px;
+}
+.yearmonthday{
+    margin-bottom: 7px;
+    font-family: var(--font2);
+    font-size: 12px;
+    color: gray;
+}
+.oneplace{
+    margin-bottom: 14px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgb(214, 214, 214);
+}
+.placeimg{
+    border-radius: 25px;
+    width: 48px;
+    height: 48px;
+    margin-right: 10px;
+}
+.marketname{
+    font-family: var(--font1);
+    font-weight: 500;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: var(--colorDark);
+    margin-bottom: 6px;
+}
+.marketname2{
+    font-family: var(--font2);
+    font-weight: 400;
+    font-size: 13px;
+
+    color: var(--colorDark);
+
+}
+.marketprice{
+    font-family: var(--font1);
+    font-weight: 700;
+    font-size: 16px;
+
+    text-transform: uppercase;
+
+    color: var(--colorDark2);
+}
+.littleprice{
+    font-size: 10px;
+    font-weight: 400;
+    color: gray;
+}
+
+.walletcard{
+    /* background-color: #33302f; */
+    width: 343px;
+    height: 216px;
+}
+#card{
+    /* background-color: #7cfc00; */
+    margin-top: 20px;
+    background-image: url("https://www.wallpapertip.com/wmimgs/172-1725636_red-abstract-background-images-hd-architecture.jpg");
+    /* object-fit: unset; */
+    background-size: cover;
+    padding-top: 40px;
+    border-radius: 20px;
+    /* background-color: #2F333C; */
+    width: 300px;
+    height: 185px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#money{
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+#card i{
+    font-size: 18px;
+}
+#card .progress{
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid var(--colorDark);
+}
+
+.sketch{
+    background-color: #d3d2d2;
+    position: relative;
+    /* width: 375px; */
+    height: 300px;
+    /* background-color: #2F333C; */
+    border: 1px solid #ff0038;
+    border-top: none;
+    border-right: none;
+    margin-top: 100px;
+    z-index: 0;
+}
+.v-meter{
+    position: relative;
+    top: 0;
+    left: -10px;
+    /* width: 350px; */
+    height: 250px;
+    z-index: 100;
+}
+
+.v-meter li{
+    position: relative;
+    left: 9px;
+    height: 50px;
+    border-bottom: 1px solid #ff0038;
+    padding: 0;
+    margin: 0;
+}
+
+.v-meter li div{
+    position: absolute;
+    top: -27px;
+    /* width: 40px; */
+    font-size: 16px;
+    /* left: -75px; */
+    left: 10px;
+    padding-top: 55px;
+    color: #fff;
+    text-align: right;
+}
+
+.bar{
+    width: 12px;
+    height: 16%;
+    /* background-color: #7a0e2e; */
+    position: absolute;
+    left: 20px;
+    bottom: 5px;
+    z-index: 1000;
+    margin: 0 40px;
+}
+.bar::after{
+    content: '';
+    width: 12px;
+    height: 5px;
+    background-color: #5e0923;
+    position: absolute;
+    left: -2.5px;
+    top: -5px;
+    transform: skewX(45deg);
+}
+.bar::before{
+    content: '';
+    width: 5px;
+    height: 100%;
+    background-color: #5e0923;
+    position: absolute;
+    top: -2.5px;
+    left: -5px;
+    bottom: 5px;
+    transform: skewY(45deg);
+}
+.one{
+    background-color: rgb(20, 109, 27);
+}
+.one::after{
+    background-color: rgb(13, 100, 20);
+}
+.one::before{
+    background-color: rgb(13, 100, 20);
+}
+.two{
+    left: 60px;
+    height: 20%;
+    background-color: rgb(35, 57, 131);
+}
+.two::after{
+    background-color: rgb(17, 37, 102);
+}
+.two::before{
+    background-color: rgb(17, 37, 102);
+}
+
+.three{
+    left: 100px;
+    height: 32%;
+    background-color: deeppink ;
+}
+
+.three::after{
+    background-color:  rgb(218, 26, 128) ;
+}
+.three::before{
+    background-color:  rgb(218, 26, 128) ;
+}
+.four{
+    left: 140px;
+    height: 85%;
+    background-color: purple;
+}
+.four::after{
+    background-color: rgb(97, 0, 97);
+}
+.four::before{
+    background-color: rgb(97, 0, 97);
+}
+.five{
+    left: 180px;
+    height: 25%;
+    background-color: crimson;
+}
+.five::after{
+    background-color: rgb(180, 16, 49);
+}
+.five::before{
+    background-color: rgb(180, 16, 49);
+}
+.six{
+    left: 220px;
+    height: 55%;
+    background-color: cornflowerblue;
+}
+.six::after{
+    background-color: rgb(65, 104, 177);
+}
+.six::before{
+    background-color:  rgb(65, 104, 177);
+}
+.seven{
+    left: 260px;
+    height: 70%;
+    background-color: chocolate;
+}
+.seven::after{
+    background-color: rgb(160, 81, 25);
+}
+.seven::before{
+    background-color:  rgb(160, 81, 25);
+}
+
+
+.one2{
+    left: 23px;
+    height: 70%;
+}
+.two2{
+    left: 83px;
+    height: 40%;
+}
+.five2{
+    left: 143px;
+    height: 60%;
+}
+.six2{
+    left: 203px;
+    height: 20%;
+}
+.seven2{
+    left: 263px;
+    height: 50%;
+}
+
+
+
+#containerstatistic{
+    position: relative;
+}
+#statistikaname{
+    position: absolute;
+    top: 210px;
+}
+#statistikaname div{
+    font-size: 10px;
+    color: #fff;
+    font-weight: 700;
+    left: -80px;
+}
+#internet{
+    position: absolute;
+    top: 60px;
+}
+#komunal{
+    position: absolute;
+    top: 100px;
+}
+#mobil{
+    position: absolute;
+    top: 140px;
+}
+#erzaq{
+    position: absolute;
+    top: 180px;
+}
+#neqliyyat{
+    position: absolute;
+    top: 220px;
+}
+#kafe{
+    position: absolute;
+    top: 260px;
+}
+#geyim{
+    position: absolute;
+    top: 300px;
+}
+
+#statisticbuttons a, 
+#statisticbuttons button{
+    border: 1px solid var(--colorlightred);
+    border-radius: 10px;
+    font-size: 50px;
+    padding: 20px 40px;
+
+}
+#statisticbuttonnamestitle{
+    font-size: 18px;
+    text-align: center;
+    margin-top: 25px;
+}
+
+
+
+/* parametr bar */
+
+.slidecontainerparametr {
+    width: 100%; /* Width of the outside container */
+  }
+  
+  /* The slider itself */
+  .slider {
+    -webkit-appearance: none;  /* Override default CSS styles */
+    appearance: none;
+    width: 100%; /* Full-width */
+    height: 25px; /* Specified height */
+    background: #d3d3d3; /* Grey background */
+    outline: none; /* Remove outline */
+    opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+    -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+    transition: opacity .2s;
+    border-radius: 20px;
+  }
+  
+  /* Mouse-over effects */
+  .slider:hover {
+    opacity: 1; /* Fully shown on mouse-over */
+  }
+  
+  /* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Override default look */
+    appearance: none;
+    width: 25px; /* Set a specific slider handle width */
+    height: 25px; /* Slider handle height */
+    background: #ff0038; /* Green background */
+    cursor: pointer; /* Cursor on hover */
+    border-radius: 20px;
+  }
+  
+  .slider::-moz-range-thumb {
+    width: 25px; /* Set a specific slider handle width */
+    height: 25px; /* Slider handle height */
+    background: #ff0038; /* Green background */
+    cursor: pointer; /* Cursor on hover */
+
+  }

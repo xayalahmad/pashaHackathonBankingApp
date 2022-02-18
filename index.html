@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./src/reset.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="./src/style.css">
+    <!-- <link rel="stylesheet" href="./src/charts.min.css"> -->
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/charts.css/dist/charts.min.css"> -->
+    <link rel="stylesheet" href="https://unpkg.com/charts.css/dist/charts.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+</head>
+<body class="bg">
+
+
+    <div id="card" class="bg-success" style="position: relative;">
+        <div id="money" class="text-center font-weight-bold text-light font3">Limit: <span id="blurmoney">₼1250</span></div>
+        <div id="" class="text-center text-white font-weight-bold font3" style="position: absolute; top: 125px; left: 120px; font-size: 15px;"> <span id="blurmoney2">₼650</span></div>
+        <div style="position: absolute; top: 101px; z-index: 9;">
+            <i class="fas fa-user-circle text-light" style="position: relative; left: 130px;"></i>
+            <div class="bg-light text-light" style="width: 5px; position: relative; left: 240px; top: -24px;"> .
+            </div>
+        </div>
+        <div class="progress">
+            <div class="progress-bar fa-rotate-180" role="progressbar" style="width: 100%; background: linear-gradient(to right, blue ,red, orange,yellow,green);" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+    </div>
+
+
+
+
+
+<!-- <div id="containerstatistic">
+<div class="sketch mb-5 ml-2 mr-2">
+    <div class="bar one"></div>
+    <div class="bar two"></div>
+    <div class="bar three"></div>
+    <div class="bar four"></div>
+    <div class="bar five"></div>
+    <div class="bar six"></div>
+    <div class="bar seven"></div>
+    <ul class="v-meter">
+        <li><div class="text-dark font-weight-bold">125₼</div></li>
+        <li><div class="text-dark font-weight-bold">100₼</div></li>
+        <li><div class="text-dark font-weight-bold">75₼</div></li>
+        <li><div class="text-dark font-weight-bold">50₼</div></li>
+        <li><div class="text-dark font-weight-bold">25₼</div></li>
+    </ul>
+</div>
+<div id="statistikaname" class="fa-rotate-270">
+
+    <div id="mobil">Mobil</div>
+    <div id="internet">İnternet</div>
+    <div id="komunal">Komunal</div>
+    <div id="erzaq">Ərzaq</div>
+    <div id="neqliyyat">Nəqliyyat</div>
+    <div id="kafe">Kafe/Restoran</div>
+    <div id="geyim">Geyim</div>
+    
+</div>
+
+</div> -->
+
+
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header border-0">
+          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <div class="slidecontainerparametr">
+                <input type="range" min="1" max="100" value="0" class="slider" id="myRange">
+                <div id="demoparametr" class="text-center"></div>
+              </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<i data-toggle="modal" data-target="#exampleModal" class="fas fa-cog text-light" style="position: relative; top: -35px; left: 300px; font-size: 20px;"></i>
+<i class="fas fa-eye text-light" style="position: relative; top: -35px; left: 33px; font-size: 17px;"></i>
+<i class="fas fa-eye-slash text-light d-none" style="font-size: 17px; position: relative; top: -35px; left: 32px;"></i>
+
+
+<div id="statisticbuttons" class="mt-5">
+    <div class="d-flex justify-content-center">
+            <div class="mr-3 flex-column justify-content-center align-items-center">
+                <a href="./statistika.html" class="col-12">
+                    <i class="fas fa-chart-bar colorlightred"></i>
+                </a>
+                <div id="statisticbuttonnamestitle" class="font1">Statistika</div>
+            </div>
+            <div class="ml-3 flex-column justify-content-center align-items-center">
+                <a href="./kateqoriya.html" class="col-12">
+                    <i class="fas fa-th colorlightred"></i>
+                </a>
+                <div  id="statisticbuttonnamestitle" class="font1">Kateqoriya</div>
+            </div>
+    </div>
+
+    <div class="d-flex justify-content-center mt-5">
+        <div class="mr-3 flex-column justify-content-center align-items-center">
+            <a href="./xerc.html" class="col-12">
+                <i class="fas fa-donate colorlightred"></i>
+            </a>
+            <div id="statisticbuttonnamestitle" class="font1">Xərclərim</div>
+        </div>
+            <div data-toggle="modal" data-target="#exampleModalpig" class="ml-3 flex-column justify-content-center align-items-center bg-white">
+                <a class="col-12 bg-white">
+                    <i class="fas fa-piggy-bank colorlightred"></i>
+                </a>
+                <div  id="statisticbuttonnamestitle" class="font1">Qumbaram</div>
+            </div>
+</div>
+
+<div class="d-flex justify-content-center mt-5 mb-5">
+    <div class="mr-3 flex-column justify-content-center align-items-center">
+        <a href="" class="col-12">
+            <i class="fas fa-car colorlightred"></i>
+        </a>
+        <div id="statisticbuttonnamestitle" class="font1">Arzularım</div>
+    </div>
+</div>
+</div>
+
+
+
+
+
+<div class="modal fade" id="exampleModalpig" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header border-0">
+          <h5 class="modal-title  font1" id="exampleModalLabel"></h5>
+
+        </div>
+        <div class="modal-body">
+            <div class="">
+
+                <img class=" d-flex justify-content-center m-0 p-0 mx-auto" id="pigimage" style="width: 350px; position: relative; left: -15px;" src="./img/pig1.jpg" alt="">
+            </div>
+            <div class="d-none" id="winheart"></div>
+            <div class="text-center">
+                <div id="demotitle"  class="d-none">Qumbaranı qırmaq üçün qalan vaxt:</div>
+                <div class="d-none" id="demo"></div>
+            </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Bağla</button>
+        </div>
+      </div>
+    </div>
+  </div>
+    
+  
+  <nav class="bg-light fixed-bottom" style="margin-top: 105px; width: 375px;">
+    <div style="position: relative; bottom: 0px;" class="d-flex justify-content-around">
+        <div class="d-flex flex-column align-items-center justify-content-center m-0 p-0">
+            <i style="width: 25px; height: 25px; color: grey;" class="d-flex justify-content-center align-items-center fas fa-home m-0 p-0"></i>
+            <div style="color: grey; font-size: 10px;">Ana Səhifə</div>
+        </div>
+        <div class="d-flex flex-column align-items-center justify-content-center m-0 p-0">
+            <i style="width: 25px; height: 25px; color: grey;" class="fa-rotate-90 d-flex justify-content-center align-items-center fas fa-wifi"></i>
+            <div style="color: grey; font-size: 10px;">NFC Pay</div>
+        </div>
+        <div class="d-flex flex-column align-items-center justify-content-center m-0 p-0">
+            <i style="width: 25px; height: 25px; color: grey;" class="d-flex justify-content-center align-items-center fas fa-qrcode"></i>
+            <div style="color: grey; font-size: 10px;">QR Pay</div>
+        </div>
+        <div class="d-flex flex-column align-items-center justify-content-center m-0 p-0">
+            <i style="width: 25px; height: 25px; color: grey;" class="d-flex justify-content-center align-items-center fas fa-credit-card"></i>
+            <div style="color: grey; font-size: 10px;">Ödənişlər</div>
+        </div>
+        <div class="d-flex flex-column align-items-center justify-content-center m-0 p-0">
+            <i style="width: 25px; height: 25px;" class="d-flex justify-content-center align-items-center fas fa-wallet colorred"></i>
+            <div class="colorred" style="font-size: 10px; font-weight: 500;">Pul kisəsi</div>
+        </div>
+        <div class="d-flex flex-column align-items-center justify-content-center m-0 p-0">
+            <i style="width: 25px; height: 25px; color: grey;" class="d-flex justify-content-center align-items-center fas fa-align-justify"></i>
+            <div style="color: grey; font-size: 10px;">Daha çox</div>
+        </div>
+    </div>
+</nav>
+
+
+
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+    <script src="./src/script.js"></script>
+    <script src="./src/parametr.js"></script>
+</body>
+</html>

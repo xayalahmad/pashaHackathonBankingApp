@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./src/reset.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="./src/style.css">
+    <!-- <link rel="stylesheet" href="./src/charts.min.css"> -->
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/charts.css/dist/charts.min.css"> -->
+    <link rel="stylesheet" href="https://unpkg.com/charts.css/dist/charts.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+</head>
+<body class="container">
+    <a href="./index.html">
+        <div class="btn mt-2 font2" style="color: #ff0038; border: 1px solid #ff0038;">Geri</div>
+    </a> <br>
+    <div data-toggle="modal" data-target="#exampleModaladdcategory" class="btn mt-4 mb-4 d-flex text-center justify-content-center align-items-center text-white bgcolorred">
+        <div>Yeni kateqoriya əlavə et</div>
+        <i class="ml-2 fas fa-plus"></i>
+    </div>
+
+
+
+
+
+
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModaladdcategory" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-body">
+            <div class="d-flex justify-content-between align-items-center">
+                <div class="input-group p-0 m-0 col-12">
+                    <input id="kateqoriyaelaveetinputu" type="text" class="form-control col-12" placeholder="Yeni kateqoriya adı" aria-label="Username" aria-describedby="basic-addon1">
+                  </div>
+                </div>
+                <div id="kateqoriyaelaveetmespinner" class="d-none ">
+                    <div id="kateqoriyaelaveetmespinner" class="spinner-border text-success mt-3 d-flex justify-content-center align-items-center ml-auto mx-auto" role="status">
+                        <span class="sr-only">Loading...</span>
+                      </div>
+                </div>
+                <div id="kateqoriyaelaveetmekelaveedildi" class="d-none">
+                    <div class=" text-success  d-flex justify-content-center align-items-center mt-3 ml-auto mx-auto">Əlavə edildi</div>
+                </div>
+                
+        </div>
+        <div class="modal-footer">
+            <button id="kateqoriyaelaveet" type="button" class="btn btn-success">Əlavə et</button>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Bağla</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+    <form>
+        <!-- <div class="form-group">
+          <label for="exampleFormControlSelect1">Mövcud kateqoriyalar</label>
+          <select class="form-control" id="exampleFormControlSelect1"> -->
+            <div class="btn btn-primary btn-block">Mobil</div>
+            <div class="btn btn-primary btn-block">İnternet</div>
+            <div class="btn btn-primary btn-block">Komunal</div>
+            <div class="btn btn-primary btn-block">Ərzaq</div>
+            <div class="btn btn-primary btn-block">Nəqliyyat</div>
+            <div class="btn btn-primary btn-block">Kafe/Restoran</div>
+            <div class="btn btn-primary btn-block">Geyim</div>
+          </select>
+        <!-- </div> -->
+      </form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <nav class="bg-light fixed-bottom" style="margin-top: 65px;">
+    <div style="position: relative; bottom: 0px;" class="d-flex justify-content-around">
+        <div class="d-flex flex-column align-items-center justify-content-center m-0 p-0">
+            <i style="width: 25px; height: 25px; color: grey;" class="d-flex justify-content-center align-items-center fas fa-home m-0 p-0"></i>
+            <div style="color: grey; font-size: 10px;">Ana Səhifə</div>
+        </div>
+        <div class="d-flex flex-column align-items-center justify-content-center m-0 p-0">
+            <i style="width: 25px; height: 25px; color: grey;" class="fa-rotate-90 d-flex justify-content-center align-items-center fas fa-wifi"></i>
+            <div style="color: grey; font-size: 10px;">NFC Pay</div>
+        </div>
+        <div class="d-flex flex-column align-items-center justify-content-center m-0 p-0">
+            <i style="width: 25px; height: 25px; color: grey;" class="d-flex justify-content-center align-items-center fas fa-qrcode"></i>
+            <div style="color: grey; font-size: 10px;">QR Pay</div>
+        </div>
+        <div class="d-flex flex-column align-items-center justify-content-center m-0 p-0">
+            <i style="width: 25px; height: 25px; color: grey;" class="d-flex justify-content-center align-items-center fas fa-credit-card"></i>
+            <div style="color: grey; font-size: 10px;">Ödənişlər</div>
+        </div>
+        <div class="d-flex flex-column align-items-center justify-content-center m-0 p-0">
+            <i style="width: 25px; height: 25px;" class="d-flex justify-content-center align-items-center fas fa-wallet colorred"></i>
+            <div class="colorred" style="font-size: 10px; font-weight: 500;">Pul kisəsi</div>
+        </div>
+        <div class="d-flex flex-column align-items-center justify-content-center m-0 p-0">
+            <i style="width: 25px; height: 25px; color: grey;" class="d-flex justify-content-center align-items-center fas fa-align-justify"></i>
+            <div style="color: grey; font-size: 10px;">Daha çox</div>
+        </div>
+    </div>
+</nav>
+
+
+
+
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+    <script src="./src/kateqoriya.js"></script>
+</body>
+</html>

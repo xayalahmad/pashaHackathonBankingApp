@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./src/reset.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="./src/style.css">
+    <!-- <link rel="stylesheet" href="./src/charts.min.css"> -->
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/charts.css/dist/charts.min.css"> -->
+    <link rel="stylesheet" href="https://unpkg.com/charts.css/dist/charts.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+</head>
+<body class="container">
+    <a href="./index.html">
+        <div class="btn  mt-2 font2" style="color: #ff0038; border: 1px solid #ff0038;">Geri</div>
+    </a>
+    <div class="font2  mt-4 mb-3 " style="font-size: 20px;">Ümumi kateqoriyalar üzrə</div>
+    <div class=" input-group  mb-2">
+        <input type="date" class="form-control mr-1" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+        <input type="date" class="form-control ml-1" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+      </div>
+
+
+<div id="containerstatistic" class="mt-4">
+<div class="sketch mb-5  mt-2">
+    <div class="bar one"></div>
+    <div class="bar two"></div>
+    <div class="bar three"></div>
+    <div class="bar four"></div>
+    <div class="bar five"></div>
+    <div class="bar six"></div>
+    <div class="bar seven"></div>
+    <ul class="v-meter ">
+        <li><div class="text-dark font-weight-bold">125₼</div></li>
+        <li><div class="text-dark font-weight-bold">100₼</div></li>
+        <li><div class="text-dark font-weight-bold">75₼</div></li>
+        <li><div class="text-dark font-weight-bold">50₼</div></li>
+        <li><div class="text-dark font-weight-bold">25₼</div></li>
+    </ul>
+</div>
+<div id="statistikaname" class="fa-rotate-270">
+
+    <div id="mobil">Mobil</div>
+    <div id="internet">İnternet</div>
+    <div id="komunal">Komunal</div>
+    <div id="erzaq">Ərzaq</div>
+    <div id="neqliyyat">Nəqliyyat</div>
+    <div id="kafe">Kafe/Restoran</div>
+    <div id="geyim">Geyim</div>
+    
+</div>
+</div>
+
+
+
+<div class="dropdown">
+    <!-- <div class="d-flex align-items-center"> -->
+        <span>Kateqoriya seçin:</span>
+        <button class="btn btn-secondary dropdown-toggle col-5" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-expanded="false">
+            Kateqoriyalar
+        </button>
+    <!-- </div> -->
+    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+      <a data-toggle="modal" data-target="#exampleModal" data-category="Mobil" class="dropdown-item" href="#">Mobil</a>
+      <a data-toggle="modal" data-target="#exampleModal" data-category="İnternet" class="dropdown-item" href="#">İnternet</a>
+      <a data-toggle="modal" data-target="#exampleModal" data-category="Komunal" class="dropdown-item" href="#">Komunal</a>
+      <a data-toggle="modal" data-target="#exampleModal" data-category="Ərzaq" class="dropdown-item" href="#">Ərzaq</a>
+      <a data-toggle="modal" data-target="#exampleModal" data-category="Nəqliyyat" class="dropdown-item" href="#">Nəqliyyat</a>
+      <a data-toggle="modal" data-target="#exampleModal" data-category="Kafe/Restoran" class="dropdown-item" href="#">Kafe/Restoran</a>
+      <a data-toggle="modal" data-target="#exampleModal" data-category="Geyim" class="dropdown-item" href="#">Geyim</a>
+    </div>
+  </div>
+
+
+
+
+
+
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-body">
+            <div id="modalkateqoriya2" class="font2  mt-4 mb-3 " style="font-size: 20px;">Ümumi kateqoriyalar üzrə</div>
+    <div class=" input-group  mb-2">
+        <input type="date" class="form-control mr-1" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+        <input type="date" class="form-control ml-1" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+      </div>
+
+      <div id="filtirlemek2" class="btn bgcolorred d-block text-light  d-flex justify-content-center align-items-center">
+        <div>Filtirlə</div>
+        <i class="fas fa-filter"></i>
+    </div>
+    
+    <div id="kateqoriyalaragorespinner" class="mt-4 colorred d-none spinner-border" role="status"  style="position: relative; left: 45%;">
+    <!-- <span class="sr-only text-center mx-auto">Loading...</span> -->
+</div>
+
+    <div id="kategoriyaucunqrafik" class="d-none">
+        <div id="containerstatistic" class="mt-4">
+        <div class="sketch m  mt-2">
+            <div class="bar one one2"></div>
+            <div class="bar two two2"></div>
+            <div class="bar five five2"></div>
+            <div class="bar six six2"></div>
+            <div class="bar seven seven2"></div>
+            <ul class="v-meter ">
+                <li><div class="text-dark font-weight-bold">25₼</div></li>
+                <li><div class="text-dark font-weight-bold">20₼</div></li>
+                <li><div class="text-dark font-weight-bold">15₼</div></li>
+                <li><div class="text-dark font-weight-bold">10₼</div></li>
+                <li><div class="text-dark font-weight-bold">5₼</div></li>
+            </ul>
+        </div>
+        <div class="d-flex mb-4 ml-5 justify-content-between">
+            <div class="1602">16 fev</div>
+            <div class="1702">17 fev</div>
+            <div class="1802">18 fev</div>
+            <div class="1902">19 fev</div>
+            <div class="2002">20 fev</div>
+        </div>
+        </div>
+    </div>
+        </div>
+        <div class="container d-flex justify-content-end mt-3 pt-3 mb-3" style="border-top: 1px solid rgb(182, 182, 182);">
+          <button onclick="location.reload();" type="button" class="btn btn-secondary" data-dismiss="modal">Bağla</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <nav class="bg-light fixed-bottom" style="margin-top: 65px;">
+    <div style="position: relative; bottom: 0px;" class="d-flex justify-content-around">
+        <div class="d-flex flex-column align-items-center justify-content-center m-0 p-0">
+            <i style="width: 25px; height: 25px; color: grey;" class="d-flex justify-content-center align-items-center fas fa-home m-0 p-0"></i>
+            <div style="color: grey; font-size: 10px;">Ana Səhifə</div>
+        </div>
+        <div class="d-flex flex-column align-items-center justify-content-center m-0 p-0">
+            <i style="width: 25px; height: 25px; color: grey;" class="fa-rotate-90 d-flex justify-content-center align-items-center fas fa-wifi"></i>
+            <div style="color: grey; font-size: 10px;">NFC Pay</div>
+        </div>
+        <div class="d-flex flex-column align-items-center justify-content-center m-0 p-0">
+            <i style="width: 25px; height: 25px; color: grey;" class="d-flex justify-content-center align-items-center fas fa-qrcode"></i>
+            <div style="color: grey; font-size: 10px;">QR Pay</div>
+        </div>
+        <div class="d-flex flex-column align-items-center justify-content-center m-0 p-0">
+            <i style="width: 25px; height: 25px; color: grey;" class="d-flex justify-content-center align-items-center fas fa-credit-card"></i>
+            <div style="color: grey; font-size: 10px;">Ödənişlər</div>
+        </div>
+        <div class="d-flex flex-column align-items-center justify-content-center m-0 p-0">
+            <i style="width: 25px; height: 25px;" class="d-flex justify-content-center align-items-center fas fa-wallet colorred"></i>
+            <div class="colorred" style="font-size: 10px; font-weight: 500;">Pul kisəsi</div>
+        </div>
+        <div class="d-flex flex-column align-items-center justify-content-center m-0 p-0">
+            <i style="width: 25px; height: 25px; color: grey;" class="d-flex justify-content-center align-items-center fas fa-align-justify"></i>
+            <div style="color: grey; font-size: 10px;">Daha çox</div>
+        </div>
+    </div>
+</nav>
+
+
+
+
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+    <script src="./src/statistika.js"></script>
+</body>
+</html>
