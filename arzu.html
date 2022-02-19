@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./src/reset.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="./src/style.css">
+    <!-- <link rel="stylesheet" href="./src/charts.min.css"> -->
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/charts.css/dist/charts.min.css"> -->
+    <link rel="stylesheet" href="https://unpkg.com/charts.css/dist/charts.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+</head>
+<body class="container">
+    <a href="./index.html">
+        <div class="btn mt-2 font2" style="color: #ff0038; border: 1px solid #ff0038;">Geri</div>
+    </a> <br>
+    <div data-toggle="modal" data-target="#exampleModaladdarzu" class="btn mt-4 mb-4 d-flex text-center justify-content-center align-items-center text-white bgcolorred">
+        <div>Yeni arzu əlavə et</div>
+        <i class="ml-2 fas fa-plus"></i>
+    </div>
+
+
+    <div  data-toggle="modal" data-target="#exampleModal1" class="jumbotron jumbotron-fluid" style="border-radius: 30px;">
+        <div class="container text-center pb-0 mb-0">
+            <i class="fas fa-laptop" style="font-size: 50px;"></i>
+          <div class="font1 h2">Laptop</div>
+          <div class="font3 h1 mb-0"><span class="text-success">1900</span>/2300₼</div>
+        </div>
+      </div>
+
+
+      <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-body">
+              <div class="d-flex justify-content-between align-items-center mb-3">
+                  <div class="font3 h3 m-0"><span class="text-success">1900</span>/2300₼</div>
+                  <div class="d-flex justify-content-center align-items-center">
+                      <div class="font1 h5 m-0">Laptop</div>
+                    <i class="fas fa-laptop ml-2" style="font-size: 20px;"></i>
+                  </div>
+                </div>
+                <!-- <div class="d-flex mt-2"> -->
+                    <!-- <div class="d-flex justify-content-between align-items-center"> -->
+                        <!-- <div class="input-group p-0 m-0\"> -->
+                            <div class="input-group mb-3">
+                                <input id="arzu1elaveetinputu" type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+                                <div class="input-group-append">
+                                  <span class="input-group-text">₼</span>
+                                </div>
+                              </div>
+
+
+
+
+
+                              <div id="arzu1" class="text-danger d-none mt-2">Zəhmət olmasa xanaları doldurun</div>
+                              <div id="arzu1elaveetmespinner" class="d-none ">
+                                  <div  class="spinner-border text-success mt-3 d-flex justify-content-center align-items-center ml-auto mx-auto" role="status">
+                                      <span class="sr-only">Loading...</span>
+                                    </div>
+                              </div>
+                              <div id="arzu1elaveetmekelaveedildi" class="d-none">
+                                  <div class=" text-success  d-flex justify-content-center align-items-center mt-3 ml-auto mx-auto">Əlavə edildi</div>
+                              </div>
+                              
+                              
+                              <!-- </div> -->
+                              <!-- </div> -->
+                              <!-- </div> -->
+                            </div>
+                            <div class="modal-footer">
+                <div id="birinciarzu1yapulelaveetmek" class="btn bgcolorred text-light">Əlavə et</div>
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+
+      <div  data-toggle="modal" data-target="#exampleModal2" class="jumbotron jumbotron-fluid" style="border-radius: 30px;">
+        <div class="container text-center pb-0 mb-0">
+            <i class="fas fa-plane-departure" style="font-size: 50px;"></i>
+          <div class="font1 h2">Səyahət</div>
+          <div class="font3 h1 mb-0"><span class="text-warning">280</span>/1100₼</div>
+        </div>
+      </div>
+
+
+
+      <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-body">
+              <div class="d-flex justify-content-between align-items-center mb-3">
+                  <div class="font3 h3 m-0"><span class="text-warning">280</span>/1100₼</div>
+                  <div class="d-flex justify-content-center align-items-center">
+                    <div class="font1 h5 m-0">Laptop</div>
+                    <i class="fas fa-plane-departure ml-2" style="font-size: 20px;"></i>
+                  </div>
+                </div>
+                <!-- <div class="d-flex mt-2"> -->
+                    <!-- <div class="d-flex justify-content-between align-items-center"> -->
+                        <!-- <div class="input-group p-0 m-0\"> -->
+                            <div class="input-group mr-3">
+                                <input id="arzu2elaveetinputu" type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+                                <div class="input-group-append">
+                                  <span class="input-group-text">₼</span>
+                                </div>
+                              </div>
+
+
+
+
+
+                              <div id="arzu2" class="text-danger d-none mt-2">Zəhmət olmasa xanaları doldurun</div>
+                              <div id="arzu2elaveetmespinner" class="d-none ">
+                                  <div  class="spinner-border text-success mt-3 d-flex justify-content-center align-items-center ml-auto mx-auto" role="status">
+                                      <span class="sr-only">Loading...</span>
+                                    </div>
+                              </div>
+                              <div id="arzu2elaveetmekelaveedildi" class="d-none">
+                                  <div class=" text-success  d-flex justify-content-center align-items-center mt-3 ml-auto mx-auto">Əlavə edildi</div>
+                              </div>
+                              
+                              
+                              <!-- </div> -->
+                              <!-- </div> -->
+                              <!-- </div> -->
+                            </div>
+                            <div class="modal-footer">
+                <div id="birinciarzu2yapulelaveetmek" class="btn bgcolorred text-light">Əlavə et</div>
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModaladdarzu" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-body">
+            <div class="d-flex justify-content-between align-items-center">
+                <div class="input-group p-0 m-0 col-12">
+                    <input id="arzuelaveetinputu" type="text" class="form-control mr-1 col-12" placeholder="Arzu" aria-label="Username" aria-describedby="basic-addon1">
+                    <input id="arzuelaveetinputu2" type="text" class="form-control ml-1 col-12" placeholder="Məbləğ" aria-label="Username" aria-describedby="basic-addon1">
+                      <div class="input-group-append">
+    <span class="input-group-text">₼</span>
+  </div>
+
+                  </div>
+                </div>
+                <div id="bosarzu" class="text-danger d-none mt-2">Zəhmət olmasa xanaları doldurun</div>
+                <div id="arzuelaveetmespinner" class="d-none ">
+                    <div id="arzuelaveetmespinner" class="spinner-border text-success mt-3 d-flex justify-content-center align-items-center ml-auto mx-auto" role="status">
+                        <span class="sr-only">Loading...</span>
+                      </div>
+                </div>
+                <div id="arzuelaveetmekelaveedildi" class="d-none">
+                    <div class=" text-success  d-flex justify-content-center align-items-center mt-3 ml-auto mx-auto">Əlavə edildi</div>
+                </div>
+                
+        </div>
+        <div class="modal-footer">
+            <button id="arzuelaveet" type="button" class="btn bgcolorred text-light">Əlavə et</button>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Bağla</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <nav class="bg-light fixed-bottom" style="margin-top: 105px; width: 375px;">
+        <div style="position: relative; bottom: 0px;" class="d-flex justify-content-around">
+            <div class="d-flex flex-column align-items-center justify-content-center m-0 p-0">
+                <i style="width: 25px; height: 25px; color: grey;" class="d-flex justify-content-center align-items-center fas fa-home m-0 p-0"></i>
+                <div style="color: grey; font-size: 10px;">Ana Səhifə</div>
+            </div>
+            <div class="d-flex flex-column align-items-center justify-content-center m-0 p-0">
+                <i style="width: 25px; height: 25px; color: grey;" class="fa-rotate-90 d-flex justify-content-center align-items-center fas fa-wifi"></i>
+                <div style="color: grey; font-size: 10px;">NFC Pay</div>
+            </div>
+            <div class="d-flex flex-column align-items-center justify-content-center m-0 p-0">
+                <i style="width: 25px; height: 25px; color: grey;" class="d-flex justify-content-center align-items-center fas fa-qrcode"></i>
+                <div style="color: grey; font-size: 10px;">QR Pay</div>
+            </div>
+            <div class="d-flex flex-column align-items-center justify-content-center m-0 p-0">
+                <i style="width: 25px; height: 25px; color: grey;" class="d-flex justify-content-center align-items-center fas fa-credit-card"></i>
+                <div style="color: grey; font-size: 10px;">Ödənişlər</div>
+            </div>
+            <div class="d-flex flex-column align-items-center justify-content-center m-0 p-0">
+                <i style="width: 25px; height: 25px;" class="d-flex justify-content-center align-items-center fas fa-wallet colorred"></i>
+                <div class="colorred" style="font-size: 10px; font-weight: 500;">Pul kisəsi</div>
+            </div>
+            <div class="d-flex flex-column align-items-center justify-content-center m-0 p-0">
+                <i style="width: 25px; height: 25px; color: grey;" class="d-flex justify-content-center align-items-center fas fa-align-justify"></i>
+                <div style="color: grey; font-size: 10px;">Daha çox</div>
+            </div>
+        </div>
+    </nav>
+
+
+
+
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+    <script src="./src/arzu.js"></script>
+</body>
+</html>

@@ -287,7 +287,7 @@ body{
 }
 .six{
     left: 220px;
-    height: 55%;
+    height: 70%;
     background-color: cornflowerblue;
 }
 .six::after{
@@ -298,7 +298,7 @@ body{
 }
 .seven{
     left: 260px;
-    height: 70%;
+    height: 50%;
     background-color: chocolate;
 }
 .seven::after{
@@ -329,8 +329,6 @@ body{
     left: 263px;
     height: 50%;
 }
-
-
 
 #containerstatistic{
     position: relative;
@@ -367,11 +365,11 @@ body{
 }
 #kafe{
     position: absolute;
-    top: 260px;
+    top: 300px;
 }
 #geyim{
     position: absolute;
-    top: 300px;
+    top: 260px;
 }
 
 #statisticbuttons a, 
@@ -379,15 +377,15 @@ body{
     border: 1px solid var(--colorlightred);
     border-radius: 10px;
     font-size: 50px;
-    padding: 20px 40px;
+    padding: 10px 30px;
 
 }
 #statisticbuttonnamestitle{
     font-size: 18px;
     text-align: center;
-    margin-top: 25px;
+    margin-top: 10px;
+    margin-bottom: 20px;
 }
-
 
 
 /* parametr bar */

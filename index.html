@@ -66,35 +66,42 @@
 </div> -->
 
 
-
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
-        <div class="modal-header border-0">
-          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
+
         <div class="modal-body">
-            <div class="slidecontainerparametr">
-                <input type="range" min="1" max="100" value="0" class="slider" id="myRange">
-                <div id="demoparametr" class="text-center"></div>
+            <div class="mb-2">Büdcənin neçə faizindən istifadə etdikdən sonra bildiriş gəlsin?</div>
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+                <div class="input-group-append">
+                  <span class="input-group-text">%</span>
+                </div>
               </div>
+              <div id="parametrspinner" class="d-none">
+              <div class="spinner-border text-success d-flex justify-content-center align-items-center mx-auto" role="status">
+                <span class="sr-only">Loading...</span>
+              </div> 
+            </div>
+            <div  id="yaddasaxlatitleparametr" class="d-none">
+                <div class="mx-auto text-success d-flex justify-content-center">Yadda saxlandı</div>
+            </div>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button id="yaddasaxlabtnparametr" type="button" class="btn btn-success">Yadda saxla</button>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Bağla</button>
         </div>
       </div>
     </div>
   </div>
+  
+  </div>
 
-<i data-toggle="modal" data-target="#exampleModal" class="fas fa-cog text-light" style="position: relative; top: -35px; left: 300px; font-size: 20px;"></i>
-<i class="fas fa-eye text-light" style="position: relative; top: -35px; left: 33px; font-size: 17px;"></i>
-<i class="fas fa-eye-slash text-light d-none" style="font-size: 17px; position: relative; top: -35px; left: 32px;"></i>
+<i class="fas fa-eye text-light" style="position: relative; top: -35px; left: 53px; font-size: 17px;"></i>
+<i class="fas fa-eye-slash text-light d-none" style="font-size: 17px; position: relative; top: -35px; left: 52px;"></i>
 
 
-<div id="statisticbuttons" class="mt-5">
+<div id="statisticbuttons" class="">
     <div class="d-flex justify-content-center">
             <div class="mr-3 flex-column justify-content-center align-items-center">
                 <a href="./statistika.html" class="col-12">
@@ -110,7 +117,7 @@
             </div>
     </div>
 
-    <div class="d-flex justify-content-center mt-5">
+    <div class="d-flex justify-content-center ">
         <div class="mr-3 flex-column justify-content-center align-items-center">
             <a href="./xerc.html" class="col-12">
                 <i class="fas fa-donate colorlightred"></i>
@@ -125,12 +132,19 @@
             </div>
 </div>
 
-<div class="d-flex justify-content-center mt-5 mb-5">
+<div class="d-flex justify-content-center  mb-5">
     <div class="mr-3 flex-column justify-content-center align-items-center">
-        <a href="" class="col-12">
+        <a href="./arzu.html" class="col-12">
             <i class="fas fa-car colorlightred"></i>
         </a>
         <div id="statisticbuttonnamestitle" class="font1">Arzularım</div>
+    </div>
+    <div data-toggle="modal" data-target="#exampleModal" class="ml-3 flex-column justify-content-center align-items-center bg-white">
+        <a class="col-12 bg-white">
+            <i class="fas fa-cog colorlightred"></i>
+        </a>
+    
+        <div  id="statisticbuttonnamestitle" class="font1">Parametr</div>
     </div>
 </div>
 </div>

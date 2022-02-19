@@ -38,9 +38,11 @@
         <div class="modal-body">
             <div class="d-flex justify-content-between align-items-center">
                 <div class="input-group p-0 m-0 col-12">
-                    <input id="kateqoriyaelaveetinputu" type="text" class="form-control col-12" placeholder="Yeni kateqoriya adı" aria-label="Username" aria-describedby="basic-addon1">
+                    <input id="kateqoriyaelaveetinputu" type="text" class="form-control mr-1 col-12" placeholder="Yeni kateqoriya adı" aria-label="Username" aria-describedby="basic-addon1">
+                    <input id="kateqoriyaelaveetinputu" type="text" class="form-control ml-1 col-12" placeholder="Kateqoriya limiti" aria-label="Username" aria-describedby="basic-addon1">
                   </div>
                 </div>
+                <div id="boskateqoriya" class="text-danger d-none mt-2">Zəhmət olmasa kateqoriya adı qeyd edin</div>
                 <div id="kateqoriyaelaveetmespinner" class="d-none ">
                     <div id="kateqoriyaelaveetmespinner" class="spinner-border text-success mt-3 d-flex justify-content-center align-items-center ml-auto mx-auto" role="status">
                         <span class="sr-only">Loading...</span>
@@ -52,7 +54,7 @@
                 
         </div>
         <div class="modal-footer">
-            <button id="kateqoriyaelaveet" type="button" class="btn btn-success">Əlavə et</button>
+            <button id="kateqoriyaelaveet" type="button" class="btn bgcolorred text-light">Əlavə et</button>
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Bağla</button>
         </div>
       </div>
@@ -64,13 +66,53 @@
         <!-- <div class="form-group">
           <label for="exampleFormControlSelect1">Mövcud kateqoriyalar</label>
           <select class="form-control" id="exampleFormControlSelect1"> -->
-            <div class="btn btn-primary btn-block">Mobil</div>
-            <div class="btn btn-primary btn-block">İnternet</div>
-            <div class="btn btn-primary btn-block">Komunal</div>
-            <div class="btn btn-primary btn-block">Ərzaq</div>
-            <div class="btn btn-primary btn-block">Nəqliyyat</div>
-            <div class="btn btn-primary btn-block">Kafe/Restoran</div>
-            <div class="btn btn-primary btn-block">Geyim</div>
+              <div id="allkateqoriya"></div>
+              <div class="d-flex justify-content-between pt-2 pb-2 mb-2 col-12" style="border:  1px solid #ff0038; border-radius: 4px;">
+                  <div class="font1">1. Mobil</div>
+                  <div>
+                    <i class="fas colorred mr-1 fa-pen p-1"></i>
+                    <i class="fas colorred ml-1 fa-trash p-1"></i>
+                  </div>
+              </div>
+
+              <div class="d-flex justify-content-between pt-2 pb-2 mb-2 col-12" style="border:  1px solid #ff0038; border-radius: 4px;">
+                <div class="font1">2. İnternet</div>
+                <div>
+                  <i class="fas colorred mr-1 fa-pen p-1"></i>
+                  <i class="fas colorred ml-1 fa-trash p-1"></i>
+                </div>
+            </div>
+
+            <div class="d-flex justify-content-between pt-2 pb-2 mb-2 col-12" style="border:  1px solid #ff0038; border-radius: 4px;">
+                <div class="font1">3. Komunal</div>
+                <div>
+                  <i class="fas colorred mr-1 fa-pen p-1"></i>
+                  <i class="fas colorred ml-1 fa-trash p-1"></i>
+                </div>
+            </div>
+            <div class="d-flex justify-content-between pt-2 pb-2 mb-2 col-12" style="border:  1px solid #ff0038; border-radius: 4px;">
+                <div class="font1">4. Ərzaq</div>
+                <div>
+                  <i class="fas colorred mr-1 fa-pen p-1"></i>
+                  <i class="fas colorred ml-1 fa-trash p-1"></i>
+                </div>
+            </div>
+            <div class="d-flex justify-content-between pt-2 pb-2 mb-2 col-12" style="border:  1px solid #ff0038; border-radius: 4px;">
+                <div class="font1">5. Nəqliyyat</div>
+                <div>
+                  <i class="fas colorred mr-1 fa-pen p-1"></i>
+                  <i class="fas colorred ml-1 fa-trash p-1"></i>
+                </div>
+            </div>
+            <div class="d-flex justify-content-between pt-2 pb-2 mb-2 col-12" style="border:  1px solid #ff0038; border-radius: 4px;">
+                <div class="font1">6. Geyim</div>
+                <div>
+                  <i class="fas colorred mr-1 fa-pen p-1"></i>
+                  <i class="fas colorred ml-1 fa-trash p-1"></i>
+                </div>
+            </div>
+              
+
           </select>
         <!-- </div> -->
       </form>
@@ -93,40 +135,34 @@
 
 
 
-
-
-
-
-
-
-  <nav class="bg-light fixed-bottom" style="margin-top: 65px;">
-    <div style="position: relative; bottom: 0px;" class="d-flex justify-content-around">
-        <div class="d-flex flex-column align-items-center justify-content-center m-0 p-0">
-            <i style="width: 25px; height: 25px; color: grey;" class="d-flex justify-content-center align-items-center fas fa-home m-0 p-0"></i>
-            <div style="color: grey; font-size: 10px;">Ana Səhifə</div>
+      <nav class="bg-light fixed-bottom" style="margin-top: 105px; width: 375px;">
+        <div style="position: relative; bottom: 0px;" class="d-flex justify-content-around">
+            <div class="d-flex flex-column align-items-center justify-content-center m-0 p-0">
+                <i style="width: 25px; height: 25px; color: grey;" class="d-flex justify-content-center align-items-center fas fa-home m-0 p-0"></i>
+                <div style="color: grey; font-size: 10px;">Ana Səhifə</div>
+            </div>
+            <div class="d-flex flex-column align-items-center justify-content-center m-0 p-0">
+                <i style="width: 25px; height: 25px; color: grey;" class="fa-rotate-90 d-flex justify-content-center align-items-center fas fa-wifi"></i>
+                <div style="color: grey; font-size: 10px;">NFC Pay</div>
+            </div>
+            <div class="d-flex flex-column align-items-center justify-content-center m-0 p-0">
+                <i style="width: 25px; height: 25px; color: grey;" class="d-flex justify-content-center align-items-center fas fa-qrcode"></i>
+                <div style="color: grey; font-size: 10px;">QR Pay</div>
+            </div>
+            <div class="d-flex flex-column align-items-center justify-content-center m-0 p-0">
+                <i style="width: 25px; height: 25px; color: grey;" class="d-flex justify-content-center align-items-center fas fa-credit-card"></i>
+                <div style="color: grey; font-size: 10px;">Ödənişlər</div>
+            </div>
+            <div class="d-flex flex-column align-items-center justify-content-center m-0 p-0">
+                <i style="width: 25px; height: 25px;" class="d-flex justify-content-center align-items-center fas fa-wallet colorred"></i>
+                <div class="colorred" style="font-size: 10px; font-weight: 500;">Pul kisəsi</div>
+            </div>
+            <div class="d-flex flex-column align-items-center justify-content-center m-0 p-0">
+                <i style="width: 25px; height: 25px; color: grey;" class="d-flex justify-content-center align-items-center fas fa-align-justify"></i>
+                <div style="color: grey; font-size: 10px;">Daha çox</div>
+            </div>
         </div>
-        <div class="d-flex flex-column align-items-center justify-content-center m-0 p-0">
-            <i style="width: 25px; height: 25px; color: grey;" class="fa-rotate-90 d-flex justify-content-center align-items-center fas fa-wifi"></i>
-            <div style="color: grey; font-size: 10px;">NFC Pay</div>
-        </div>
-        <div class="d-flex flex-column align-items-center justify-content-center m-0 p-0">
-            <i style="width: 25px; height: 25px; color: grey;" class="d-flex justify-content-center align-items-center fas fa-qrcode"></i>
-            <div style="color: grey; font-size: 10px;">QR Pay</div>
-        </div>
-        <div class="d-flex flex-column align-items-center justify-content-center m-0 p-0">
-            <i style="width: 25px; height: 25px; color: grey;" class="d-flex justify-content-center align-items-center fas fa-credit-card"></i>
-            <div style="color: grey; font-size: 10px;">Ödənişlər</div>
-        </div>
-        <div class="d-flex flex-column align-items-center justify-content-center m-0 p-0">
-            <i style="width: 25px; height: 25px;" class="d-flex justify-content-center align-items-center fas fa-wallet colorred"></i>
-            <div class="colorred" style="font-size: 10px; font-weight: 500;">Pul kisəsi</div>
-        </div>
-        <div class="d-flex flex-column align-items-center justify-content-center m-0 p-0">
-            <i style="width: 25px; height: 25px; color: grey;" class="d-flex justify-content-center align-items-center fas fa-align-justify"></i>
-            <div style="color: grey; font-size: 10px;">Daha çox</div>
-        </div>
-    </div>
-</nav>
+    </nav>
 
 
 

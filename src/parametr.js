@@ -1,8 +1,15 @@
-var slider = document.getElementById("myRange");
-var output = document.getElementById("demoparametr");
-output.innerHTML = slider.value; // Display the default slider value
+$("#parametrspinner")
 
-// Update the current slider value (each time you drag the slider handle)
-slider.oninput = function() {
-  output.innerHTML = `${this.value} %`;
-}
+
+
+$(document).on("click", "#yaddasaxlabtnparametr", function(){
+  $("#parametrspinner").removeClass("d-none")
+  function yaddasaxla(){
+  $("#parametrspinner").addClass("d-none")
+  $("#yaddasaxlatitleparametr").removeClass("d-none")
+  $("#yaddasaxlabtn").addClass("d-none")
+  $("#yaddasaxlabtnparametr").addClass("d-none")
+  }
+
+  setTimeout(() => yaddasaxla(), 2000); 
+})
