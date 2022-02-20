@@ -36,9 +36,10 @@
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-body">
+          <div class="mb-2">Yeni kateqoriya əlavə edin</div>
             <div class="d-flex justify-content-between align-items-center">
                 <div class="input-group p-0 m-0 col-12">
-                    <input id="kateqoriyaelaveetinputu" type="text" class="form-control mr-1 col-12" placeholder="Yeni kateqoriya adı" aria-label="Username" aria-describedby="basic-addon1">
+                    <input id="kateqoriyaelaveetinputu" type="text" class="form-control mr-1 col-12" placeholder="Kateqoriya adı" aria-label="Username" aria-describedby="basic-addon1">
                     <input id="kateqoriyaelaveetinputu" type="text" class="form-control ml-1 col-12" placeholder="Kateqoriya limiti" aria-label="Username" aria-describedby="basic-addon1">
                   </div>
                 </div>
@@ -66,56 +67,56 @@
         <!-- <div class="form-group">
           <label for="exampleFormControlSelect1">Mövcud kateqoriyalar</label>
           <select class="form-control" id="exampleFormControlSelect1"> -->
-              <div id="allkateqoriya"></div>
-              <div class="d-flex justify-content-between pt-2 pb-2 mb-2 col-12" style="border:  1px solid #ff0038; border-radius: 4px;">
+              <div   id="allkateqoriya"></div>
+              <div id="kateqoriya1" class="d-flex justify-content-between pt-2 pb-2 mb-2 col-12" style="border:  1px solid #ff0038; border-radius: 4px;">
                   <div class="font1">1. Mobil</div>
                   <div>
-                    <i class="fas colorred mr-1 fa-pen p-1"></i>
-                    <i class="fas colorred ml-1 fa-trash p-1"></i>
+                    <i data-toggle="modal" data-target="#exampleModalcat1" class="fas colorred mr-1 fa-pen p-1"></i>
+                    <i data-toggle="modal" data-target="#exampleModaldelete1" class="fas colorred ml-1 fa-trash p-1"></i>
                   </div>
               </div>
 
-              <div class="d-flex justify-content-between pt-2 pb-2 mb-2 col-12" style="border:  1px solid #ff0038; border-radius: 4px;">
+              <div id="kateqoriya2" class="d-flex justify-content-between pt-2 pb-2 mb-2 col-12" style="border:  1px solid #ff0038; border-radius: 4px;">
                 <div class="font1">2. İnternet</div>
                 <div>
-                  <i class="fas colorred mr-1 fa-pen p-1"></i>
-                  <i class="fas colorred ml-1 fa-trash p-1"></i>
+                  <i  data-toggle="modal" data-target="#exampleModalcat2" class="fas colorred mr-1 fa-pen p-1"></i>
+                  <i  data-toggle="modal" data-target="#exampleModaldelete2" class="fas colorred ml-1 fa-trash p-1"></i>
                 </div>
             </div>
 
-            <div class="d-flex justify-content-between pt-2 pb-2 mb-2 col-12" style="border:  1px solid #ff0038; border-radius: 4px;">
+            <div id="kateqoriya3" class="d-flex justify-content-between pt-2 pb-2 mb-2 col-12" style="border:  1px solid #ff0038; border-radius: 4px;">
                 <div class="font1">3. Komunal</div>
                 <div>
-                  <i class="fas colorred mr-1 fa-pen p-1"></i>
-                  <i class="fas colorred ml-1 fa-trash p-1"></i>
+                  <i  data-toggle="modal" data-target="#exampleModalcat3" class="fas colorred mr-1 fa-pen p-1"></i>
+                  <i  data-toggle="modal" data-target="#exampleModaldelete3" class="fas colorred ml-1 fa-trash p-1"></i>
                 </div>
             </div>
-            <div class="d-flex justify-content-between pt-2 pb-2 mb-2 col-12" style="border:  1px solid #ff0038; border-radius: 4px;">
+            <div id="kateqoriya4" class="d-flex justify-content-between pt-2 pb-2 mb-2 col-12" style="border:  1px solid #ff0038; border-radius: 4px;">
                 <div class="font1">4. Ərzaq</div>
                 <div>
-                  <i class="fas colorred mr-1 fa-pen p-1"></i>
-                  <i class="fas colorred ml-1 fa-trash p-1"></i>
+                  <i  data-toggle="modal" data-target="#exampleModalcat4" class="fas colorred mr-1 fa-pen p-1"></i>
+                  <i data-toggle="modal" data-target="#exampleModaldelete4" class="fas colorred ml-1 fa-trash p-1"></i>
                 </div>
             </div>
-            <div class="d-flex justify-content-between pt-2 pb-2 mb-2 col-12" style="border:  1px solid #ff0038; border-radius: 4px;">
+            <div id="kateqoriya5" class="d-flex justify-content-between pt-2 pb-2 mb-2 col-12" style="border:  1px solid #ff0038; border-radius: 4px;">
                 <div class="font1">5. Nəqliyyat</div>
                 <div>
-                  <i class="fas colorred mr-1 fa-pen p-1"></i>
-                  <i class="fas colorred ml-1 fa-trash p-1"></i>
+                  <i  data-toggle="modal" data-target="#exampleModalcat5" class="fas colorred mr-1 fa-pen p-1"></i>
+                  <i data-toggle="modal" data-target="#exampleModaldelete5" class="fas colorred ml-1 fa-trash p-1"></i>
                 </div>
             </div>
-            <div class="d-flex justify-content-between pt-2 pb-2 mb-2 col-12" style="border:  1px solid #ff0038; border-radius: 4px;">
+            <div id="kateqoriya6" class="d-flex justify-content-between pt-2 pb-2 mb-2 col-12" style="border:  1px solid #ff0038; border-radius: 4px;">
                 <div class="font1">6. Geyim</div>
                 <div>
-                  <i class="fas colorred mr-1 fa-pen p-1"></i>
-                  <i class="fas colorred ml-1 fa-trash p-1"></i>
+                  <i  data-toggle="modal" data-target="#exampleModalcat6" class="fas colorred mr-1 fa-pen p-1"></i>
+                  <i data-toggle="modal" data-target="#exampleModaldelete6" class="fas colorred ml-1 fa-trash p-1"></i>
                 </div>
             </div>
-            <div class="d-flex justify-content-between pt-2 pb-2 mb-2 col-12" style="border:  1px solid #ff0038; border-radius: 4px;">
+            <div id="kateqoriya7" class="d-flex justify-content-between pt-2 pb-2 mb-2 col-12" style="border:  1px solid #ff0038; border-radius: 4px;">
               <div class="font1">7. Başqa</div>
               <div>
-                <i class="fas colorred mr-1 fa-pen p-1"></i>
-                <i class="fas colorred ml-1 fa-trash p-1"></i>
+                <i  data-toggle="modal" data-target="#exampleModalcat7" class="fas colorred mr-1 fa-pen p-1"></i>
+                <i data-toggle="modal" data-target="#exampleModaldelete7" class="fas colorred ml-1 fa-trash p-1"></i>
               </div>
           </div>
               
@@ -131,6 +132,311 @@
 
 
 
+      <div class="modal fade" id="exampleModalcat1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-body">
+              <div class="colorred h4 font-weight-bold">Mobil</div>
+              <div>Adı dəyiş</div>
+              <div class="input-group mb-3 mt-2">
+                <input  type="text" class="form-control rounded" aria-label="Amount (to the nearest dollar)">
+              </div>
+              <div>Limit əlavə et</div>
+              <div class="input-group mb-1 mt-2">
+                <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+                <div class="input-group-append">
+                  <span class="input-group-text">₼</span>
+                </div>
+              </div>
+              
+            </div>
+            <div class="modal-footer">
+              <button id="edityaddasaxla1" type="button" class="btn bgcolorred text-light">Yadda saxla</button>
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+      <div class="modal fade" id="exampleModalcat2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-body">
+              <div class="colorred h4 font-weight-bold">Mobil</div>
+              <div>Adı dəyiş</div>
+              <div class="input-group mb-3 mt-2">
+                <input  type="text" class="form-control rounded" aria-label="Amount (to the nearest dollar)">
+              </div>
+              <div>Limit əlavə et</div>
+              <div class="input-group mb-1 mt-2">
+                <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+                <div class="input-group-append">
+                  <span class="input-group-text">₼</span>
+                </div>
+              </div>
+              
+            </div>
+            <div class="modal-footer">
+              <button id="edityaddasaxla2" type="button" class="btn bgcolorred text-light">Yadda saxla</button>
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="modal fade" id="exampleModalcat3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-body">
+              <div class="colorred h4 font-weight-bold">Mobil</div>
+              <div>Adı dəyiş</div>
+              <div class="input-group mb-3 mt-2">
+                <input  type="text" class="form-control rounded" aria-label="Amount (to the nearest dollar)">
+              </div>
+              <div>Limit əlavə et</div>
+              <div class="input-group mb-1 mt-2">
+                <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+                <div class="input-group-append">
+                  <span class="input-group-text">₼</span>
+                </div>
+              </div>
+              
+            </div>
+            <div class="modal-footer">
+              <button id="edityaddasaxla3" type="button" class="btn bgcolorred text-light">Yadda saxla</button>
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="modal fade" id="exampleModalcat4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-body">
+              <div class="colorred h4 font-weight-bold">Mobil</div>
+              <div>Adı dəyiş</div>
+              <div class="input-group mb-3 mt-2">
+                <input  type="text" class="form-control rounded" aria-label="Amount (to the nearest dollar)">
+              </div>
+              <div>Limit əlavə et</div>
+              <div class="input-group mb-1 mt-2">
+                <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+                <div class="input-group-append">
+                  <span class="input-group-text">₼</span>
+                </div>
+              </div>
+              
+            </div>
+            <div class="modal-footer">
+              <button id="edityaddasaxla4" type="button" class="btn bgcolorred text-light">Yadda saxla</button>
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="modal fade" id="exampleModalcat5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-body">
+              <div class="colorred h4 font-weight-bold">Mobil</div>
+              <div>Adı dəyiş</div>
+              <div class="input-group mb-3 mt-2">
+                <input  type="text" class="form-control rounded" aria-label="Amount (to the nearest dollar)">
+              </div>
+              <div>Limit əlavə et</div>
+              <div class="input-group mb-1 mt-2">
+                <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+                <div class="input-group-append">
+                  <span class="input-group-text">₼</span>
+                </div>
+              </div>
+              
+            </div>
+            <div class="modal-footer">
+              <button  id="edityaddasaxla5" type="button" class="btn bgcolorred text-light">Yadda saxla</button>
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="modal fade" id="exampleModalcat6" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-body">
+              <div class="colorred h4 font-weight-bold">Mobil</div>
+              <div>Adı dəyiş</div>
+              <div class="input-group mb-3 mt-2">
+                <input  type="text" class="form-control rounded" aria-label="Amount (to the nearest dollar)">
+              </div>
+              <div>Limit əlavə et</div>
+              <div class="input-group mb-1 mt-2">
+                <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+                <div class="input-group-append">
+                  <span class="input-group-text">₼</span>
+                </div>
+              </div>
+              
+            </div>
+            <div class="modal-footer">
+              <button id="edityaddasaxla6" type="button" class="btn bgcolorred text-light">Yadda saxla</button>
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+      <div class="modal fade" id="exampleModalcat7" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-body">
+              <div class="colorred h4 font-weight-bold">Mobil</div>
+              <div>Adı dəyiş</div>
+              <div class="input-group mb-3 mt-2">
+                <input  type="text" class="form-control rounded" aria-label="Amount (to the nearest dollar)">
+              </div>
+              <div>Limit əlavə et</div>
+              <div class="input-group mb-1 mt-2">
+                <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+                <div class="input-group-append">
+                  <span class="input-group-text">₼</span>
+                </div>
+              </div>
+              
+            </div>
+            <div class="modal-footer">
+              <button id="edityaddasaxla7" type="button" class="btn bgcolorred text-light">Yadda saxla</button>
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+
+
+      <div class="modal fade" id="exampleModaldelete1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-body">
+              <div class="d-flex justify-content-center mx-auto">Silmək istədiyinizdən əminsiniz ?</div>
+            </div>
+            <div class="modal-footer">
+              <button id="belidelete1" type="button" class="btn text-light bgcolorred">Bəli</button>
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Xeyr</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="modal fade" id="exampleModaldelete2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-body">
+              <div class="d-flex justify-content-center mx-auto">Silmək istədiyinizdən əminsiniz ?</div>
+            </div>
+            <div class="modal-footer">
+              <button id="belidelete2" type="button" class="btn text-light bgcolorred">Bəli</button>
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Xeyr</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="modal fade" id="exampleModaldelete3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-body">
+              <div class="d-flex justify-content-center mx-auto">Silmək istədiyinizdən əminsiniz ?</div>
+            </div>
+            <div class="modal-footer">
+              <button id="belidelete3" type="button" class="btn text-light bgcolorred">Bəli</button>
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Xeyr</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="modal fade" id="exampleModaldelete4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-body">
+              <div class="d-flex justify-content-center mx-auto">Silmək istədiyinizdən əminsiniz ?</div>
+            </div>
+            <div class="modal-footer">
+              <button id="belidelete4" type="button" class="btn text-light bgcolorred">Bəli</button>
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Xeyr</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="modal fade" id="exampleModaldelete5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-body">
+              <div class="d-flex justify-content-center mx-auto">Silmək istədiyinizdən əminsiniz ?</div>
+            </div>
+            <div class="modal-footer">
+              <button id="belidelete5" type="button" class="btn text-light bgcolorred">Bəli</button>
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Xeyr</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="modal fade" id="exampleModaldelete6" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-body">
+              <div class="d-flex justify-content-center mx-auto">Silmək istədiyinizdən əminsiniz ?</div>
+            </div>
+            <div class="modal-footer">
+              <button id="belidelete6" type="button" class="btn text-light bgcolorred">Bəli</button>
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Xeyr</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="modal fade" id="exampleModaldelete7" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-body">
+              <div class="d-flex justify-content-center mx-auto">Silmək istədiyinizdən əminsiniz ?</div>
+            </div>
+            <div class="modal-footer">
+              <button id="belidelete7" type="button" class="btn text-light bgcolorred">Bəli</button>
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Xeyr</button>
+            </div>
+          </div>
+        </div>
+      </div>
 
 
 
@@ -142,7 +448,73 @@
 
 
 
-      <nav class="bg-light fixed-bottom" style="margin-top: 105px; width: 375px;">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <nav class="bg-light fixed-bottom mb-2" style="margin-top: 105px; width: 375px;">
         <div style="position: relative; bottom: 0px;" class="d-flex justify-content-around">
             <div class="d-flex flex-column align-items-center justify-content-center m-0 p-0">
                 <i style="width: 25px; height: 25px; color: grey;" class="d-flex justify-content-center align-items-center fas fa-home m-0 p-0"></i>

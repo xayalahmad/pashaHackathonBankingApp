@@ -16,33 +16,43 @@
     <link rel="stylesheet" href="./src/style.css">
 </head>
 <body class="container">
-    <a href="./index.html">
+    <a href="./statistika.html">
         <div class="btn  mt-2 font2" style="color: #ff0038; border: 1px solid #ff0038;">Geri</div>
-    </a>
-    <div class="font2  mt-4 mb-3 " style="font-size: 20px;">Ümumi kateqoriyalar üzrə</div>
-    <div class=" input-group  mb-2">
-        <input type="date" class="form-control mr-1" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
-        <input type="date" class="form-control ml-1" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
-      </div>
+    </a> <br>
 
-      <div id="piechart" class="m-0 p-0" style="width: 375; height: 400px;"></div>
-      
-<div class="dropdown">
-    <a href="./statistika2.html" id="statistika2ekecid" class="btn bgcolorred d-block text-light  d-flex justify-content-center align-items-center">
-        <div>Kateqoriyaya görə filtirlə</div>
-        <i class="fas fa-filter"></i>
-    </a>
-
+<!-- </div> -->
+<div class="dropdown-menu col-11" aria-labelledby="dropdownMenuButton">
+  <a data-category="Mobil" class="dropdown-item" href="#">Mobil</a>
+  <a data-category="İnternet" class="dropdown-item" href="#">İnternet</a>
+  <a data-category="Komunal" class="dropdown-item" href="#">Komunal</a>
+  <a data-category="Ərzaq" class="dropdown-item" href="#">Ərzaq</a>
+  <a data-category="Nəqliyyat" class="dropdown-item" href="#">Nəqliyyat</a>
+  <a data-category="Geyim" class="dropdown-item" href="#">Geyim</a>
+  <a data-category="Digər" class="dropdown-item" href="#">Digər</a>
+</div>
+</div>
 
 
+<button class="btn btn-secondary dropdown-toggle col-12 mt-4 mb-2" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-expanded="false">
+    Kateqoriyalar
+</button>
+<div class=" input-group  mb-2">
+    <input type="date" class="form-control mr-1" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+    <input type="date" class="form-control ml-1" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+  </div>
 
+  <div id="filtirlemek2" class="btn bgcolorred d-block text-light  d-flex justify-content-center align-items-center">
+    <div>Filtirlə</div>
+    <i class="fas fa-filter"></i>
+</div>
 
+<div id="kateqoriyalaragorespinner" class="mt-4 colorred d-none spinner-border" role="status"  style="position: relative; left: 45%;">
+<!-- <span class="sr-only text-center mx-auto">Loading...</span> -->
+</div>
 
-
-
-
-
-
+<div id="kategoriyaucunqrafik" class="d-none">
+    <div id="curve_chart" class="" style="width: 375px; position: relative; left: -30px;"></div>
+</div>
 
 
   <nav class="bg-light fixed-bottom mb-2" style="margin-top: 65px;">

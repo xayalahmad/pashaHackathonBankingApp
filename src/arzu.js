@@ -170,3 +170,35 @@ else{
 
 }
 })
+
+
+
+
+
+$(document).on("click", "#arzu1kart1", function(e){
+    e.preventDefault();
+    $("#arzu1hesablar").html(`
+        1200 AZN
+    `)
+})
+$(document).on("click", "#arzu1kart2", function(e){
+    e.preventDefault();
+    $("#arzu1hesablar").html(`
+        750 USD
+    `)
+})
+
+
+
+$(document).on("click", "#arzu2kart1", function(e){
+    e.preventDefault();
+    $("#arzu2hesablar").html(`
+        1200 AZN
+    `)
+})
+$(document).on("click", "#arzu2kart2", function(e){
+    e.preventDefault();
+    $("#arzu2hesablar").html(`
+        750 USD
+    `)
+})
